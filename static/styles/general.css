@@ -22,20 +22,22 @@ Paragraph default: 1.6
 
 --- 02 COLORS
 
-- Primary: Azul #0d4181
-- Primary: Verde #0a9837
-- Tints:
-#fdf2e9
-#fae5d3
-#eb984e
+- Primary: 
+#40C057
+- Tints: 
+
 
 - Shades: 
-#cf711f
-#45260a
+#3D4A3D 
+
 
 
 - Accents:
+#00488e
+#0078ED
+#00ACFF
 - Greys
+#A0AFA0
 Cinzazinho: #fafafa
 
 --- 05 SHADOWS
@@ -53,6 +55,8 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
   padding: 0;
@@ -68,15 +72,27 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #3d4a3d;
+  font-size: 1.6rem;
   line-height: 1;
   font-weight: 400;
   /* color: #555; */
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 230px 1fr;
   grid-template-rows: 80px 1fr;
 
   height: 100vh;
+}
+
+/**************************/
+/* ICONS */
+/**************************/
+.edit-icon,
+.delete-icon {
+  stroke: #0078ed;
+  height: 24px;
+  width: 24px;
 }
 
 /**************************/
@@ -161,26 +177,26 @@ body {
   display: inline-block;
   text-decoration: none;
 
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5rem;
   padding: 0.8rem 1.6rem;
-  /* border-radius: 10px; */
+  border-radius: 30px;
   border: 0;
-  color: inherit;
+  color: white;
 
   border: none;
   cursor: pointer;
   font-family: inherit;
 
   transition: all 0.3s;
-  background-color: #40c057;
+  background-color: #0078ed;
 
   margin-bottom: 20px;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #3aad4e;
+  background-color: #00488e;
 }
 
 /* HELPER/SETTINGS CLASSES */
