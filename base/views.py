@@ -150,7 +150,7 @@ def editarEquipe(request, pk):
     equipe = Equipe.objects.get(id=pk)
     grupos = Grupo.objects.all()
 
-    pessoas = Pessoa.objects.exclude(hierarquia='eleitor')
+    pessoas = Pessoa.objects.all()
     pessoas = list(pessoas.values('nome', 'cpf'))
 
     pessoa_str = 'coordenador'
@@ -202,7 +202,7 @@ def editarLíder(request, pk):
     líder = Líder.objects.get(id=pk)
     equipes = Equipe.objects.all
 
-    pessoas = Pessoa.objects.exclude(hierarquia='eleitor')
+    pessoas = Pessoa.objects.all()
     pessoas = list(pessoas.values('nome', 'cpf'))
 
     pessoa_str = 'líder'
@@ -255,7 +255,7 @@ def editarCabo(request, pk):
     cabo = Cabo.objects.get(id=pk)
     líderes = Líder.objects.all
 
-    pessoas = Pessoa.objects.exclude(hierarquia='eleitor')
+    pessoas = Pessoa.objects.all()
     pessoas = list(pessoas.values('nome', 'cpf'))
 
     pessoa_str = 'cabo'
@@ -304,7 +304,7 @@ def editarVoto(request, pk):
         return atualizar(hierarquia_form, pessoa_form)
 
     context = {'form': VotoForm(instance=voto), 'pessoa_form': PessoaForm(
-        instance=pessoa), 'título': 'novo eleitor', 'hierarquia': 'eleitor'}
+        instance=pessoa), 'título': 'Editar eleitor', 'hierarquia': 'eleitor'}
     return render(request, 'base/colaborador_form.html', context)
 
 

@@ -12,7 +12,7 @@ nav {
 
 .nav-items {
   display: grid;
-  grid-template-columns: 200px 1fr 60px;
+  grid-template-columns: 275px 1fr 60px;
   justify-items: center;
   align-items: center;
 }
@@ -51,6 +51,7 @@ menu {
   border-right: 0.5px solid #f0f0f0;
   /* justify-content: center; */
   /* background-color: #40c057; */
+  background-color: #00488e;
 }
 
 .menu-btn:link,
@@ -61,7 +62,7 @@ menu {
   font-weight: 600;
   line-height: 1rem;
   border: 0;
-  color: #0078ed;
+  color: white;
 
   border: none;
   cursor: pointer;
@@ -72,7 +73,7 @@ menu {
 
 .menu-btn:hover,
 .menu-btn:active {
-  color: #00488e;
+  color: #339a46;
 }
 
 /**************************/

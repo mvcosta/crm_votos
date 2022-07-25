@@ -23,21 +23,24 @@ Paragraph default: 1.6
 --- 02 COLORS
 
 - Primary: 
-#40C057
-- Tints: 
+#00488e
 
+- Tints: 
+#0078ED
+#00ACFF
 
 - Shades: 
-#3D4A3D 
+
 
 
 
 - Accents:
-#00488e
-#0078ED
-#00ACFF
-- Greys
+#40C057
 #A0AFA0
+#3D4A3D 
+
+- Greys
+
 Cinzazinho: #fafafa
 
 --- 05 SHADOWS
@@ -79,7 +82,7 @@ body {
   font-weight: 400;
   /* color: #555; */
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: 275px 1fr;
   grid-template-rows: 80px 1fr;
 
   height: 100vh;
@@ -90,7 +93,7 @@ body {
 /**************************/
 .edit-icon,
 .delete-icon {
-  stroke: #0078ed;
+  stroke: #40c057;
   height: 24px;
   width: 24px;
 }
@@ -189,14 +192,14 @@ body {
   font-family: inherit;
 
   transition: all 0.3s;
-  background-color: #0078ed;
+  background-color: #40c057;
 
   margin-bottom: 20px;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #00488e;
+  background-color: #339a46;
 }
 
 /* HELPER/SETTINGS CLASSES */
